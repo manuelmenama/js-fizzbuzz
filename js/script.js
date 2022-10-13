@@ -1,26 +1,27 @@
 //DATA
 const maxNumber = 100;
+let finalOutput = null;
 
 
 //contatore che conta fino a cento
-for(let i = 0; i < maxNumber; i++){
+for(let i = 1; i <= maxNumber; i++){
 
   //stampa un quadrato // solo dopo
   //stampa un numero progressivo all'interno // solo dopo
 
-  //stampiamo i numeri progressivi
-  console.log(i + 1);
   if(!(i % 3)){
-    //se il numero è divisibile per 3
-    //stampa Fizz
-    console.log(i, 'Fizz');
-  }else if{
-    //se il numero è divisibile per 5
-      //stampa Buzz
-
+    if((!(i % 3)) && (!(i % 5))){
+      finalOutput = "FizzBuzz" 
+      console.log(finalOutput);
+    }else{
+      finalOutput = "Fizz"
+      console.log(finalOutput);
+    }
+  }else if(!(i % 5)){
+    finalOutput = "Buzz"
+    console.log(finalOutput);
+  }else{
+    console.log(i);
   }
-
-
-  //se è divisibile per entrambi (3 e 5)
-    //stampa FizzBuzz
+  
 }
