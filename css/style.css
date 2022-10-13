@@ -5,3 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: burlywood;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background-color: chocolate ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
